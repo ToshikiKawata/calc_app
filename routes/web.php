@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'result';
+    return view('welcome');
 });
 
 Route::get('calc/{num1}/{operator}/{num2}', [App\Http\Controllers\calccontroller::class, 'result']);
