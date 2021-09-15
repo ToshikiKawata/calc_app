@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\CulcController@index');
 
 Route::get('calc/{num1}/{operator}/{num2}', [App\Http\Controllers\calccontroller::class, 'result']);
